@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <h1 id="otsikko">Tämä on otsikko.</h1>
+    <p id="kuvaus">Tämä on kuvaus.</p>
+
+    <form id="kyselylomake" name="kyselylomake" action="index.html" method="post">
+
+      <p id="top">Kirjoita alle nimesi.</p>
+      <label for="nimi" id="nimisyotto">Nimi:</label>
+      <input type="text" id="nimi" name="nimi" value="" minlength="4" required> <br>
+
+      <p>Kirjoita alle sähköpostisi.</p>
+      <label for="email" id="emailsyotto">Email:</label>
+      <input type="email" id="email" name="email" value="" required> <br>
+
+      <p>Kirjoita alle ikäsi.</p>
+      <label for="ika" id="ikasyotot">Ikä:</label>
+      <input type="number" id="ika" name="ika" value="" min="15" max="100" required> <br> <br>
+
+      <select id="pudotus" name="pudotus" required>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select> <br> <br>
+
+        <label for="sukupuoli">Sukupuoli:</label> <br>
+      <div class="sukupuoli">
+
+        <input type="radio" name="sukupuoli" value="Mies" required>
+        <label for="Mies">Mies</label> <br>
+        <input type="radio" name="sukupuoli" value="Nainen">
+        <label for="nainen">Nainen</label> <br>
+        <input type="radio" name="sukupuoli" value="Muu">
+        <label for="muu">Muu</label> <br> <br>
+      </div> <br>
+
+
+      <input type="checkbox" name="valintaruutu" value="">
+      <label for="valintaruutu">1</label>
+      <input type="checkbox" name="valintaruutu" value="">
+      <label for="valintaruutu">2</label>
+      <input type="checkbox" name="valintaruutu" value="">
+      <label for="valintaruutu">3</label> <br>
+
+
+      <label for="lisakommentit">Lisäkommentit:</label> <br>
+      <div class="container">
+        <textarea name="lisakommentit" id="lisakommentit" onkeyup="laskeKirjaimet(this)" rows="10" cols="5" minlength="10" maxlength="250" required></textarea> <br>
+        <div id="kirjainMaara"></div> <br>
+        <input type="submit" id="laheta" value="Lähetä">
+      </div>
+
+
+    </form>
+
+  </body>
+</html>

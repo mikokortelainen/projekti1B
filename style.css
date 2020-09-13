@@ -1,0 +1,98 @@
+body, html {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #BB0A21;
+  color: #FFF9FB;
+  margin: 0;
+  text-align: center;
+}
+
+form {
+  display: inline-block;
+  margin: 0;
+  width: 50%;
+  background-color: #252627;
+
+}
+
+
+input[type=text], input[type=email], textarea {
+  text-align: center;
+  width: 200px;
+  height: 25px;
+
+  outline: 0px solid transparent;
+  transition: border 2s ease;
+  border: 2px solid #00ff00;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+
+
+}
+
+input[type=number] {
+  text-align: center;
+  width: 100px;
+  height: 25px;
+
+  outline: 0px solid transparent;
+  transition: border 2s ease;
+  border: 2px solid #00ff00;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+
+}
+
+input:invalid, textarea:invalid {
+  border: 2px solid #ff0033;
+}
+
+
+
+
+.sukupuoli {
+  height: 66px;
+  width: auto;
+
+  display: inline-block;
+  text-align: left;
+}
+
+
+#lisakommentit {
+  min-width: 50%;
+  max-width: 50%;
+
+  min-height: 150px;
+  max-height: 150px;
+}
+
+#top {
+  margin-top: 25px;
+}
+
+#laheta {
+margin-bottom: 25px;
+width: 100px;
+height: 50px;
+
+outline: 0px solid transparent;
+border: 0;
+border-top-right-radius: 25px;
+border-bottom-left-radius: 25px;
+
+transition-property: width, height;
+transition-duration: 0.9s;
+transition-timing-function: ease;
+
+
+}
+
+#laheta:hover {
+  transition-property: width, height;
+  transition-duration: 0.8s;
+  transition-timing-function: ease;
+
+  width: 125px;
+  height: 75px;
+
+}
